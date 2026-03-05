@@ -10,6 +10,8 @@
 namespace Configs {
     void initDB(const std::string& dbPath);
 
+    bool maybeMigrate(const std::string& dbPath);
+
     QString FindCoreRealPath();
 
     bool IsAdmin(bool forceRenew=false);
